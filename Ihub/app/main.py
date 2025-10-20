@@ -1,30 +1,42 @@
-import os
-import json
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 from dotenv import load_dotenv
 from google import genai
 from google.genai.types import GenerateContentConfig
-
-# Import both schemas
-from models.route_schema import RouteAnalysis, ClassifiedRequirement # Your final output schema
-from models.input_schema import RouteInput                         # Your new input parsing schema
+from models.input_schema import RouteInput
+from models.route_schema import RouteAnalysis
+import os
 
 # Load environment variables
 load_dotenv()
 
+# Initialize FastAPI app
+app = FastAPI(title="Route Analyzer API", version="1.0.0")
+
+# --- Helper functions ---
+class UserRequest(BaseModel):
+    text: str  # single-line input
+
 def get_gemini_client():
-    """Initializes and returns the Gemini client."""
+    """
+    Initializes the Gemini client with API key from .env
+    """
     try:
-        return genai.Client()
+        api_key = os.getenv("GEMINI_API_KEY")
+        if not api_key:
+            raise ValueError("GEMINI_API_KEY missing in .env")
+        return genai.Client(api_key=api_key)
     except Exception as e:
-        raise ConnectionError(f"Error initializing Gemini client: {e}. Check your GEMINI_API_KEY.")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error initializing Gemini client: {e}"
+        )
 
 
 def robustly_parse_input(client: genai.Client, user_input_line: str) -> RouteInput:
     """
-    Uses Gemini's structured output capability to extract locations and requirements 
-    from any natural language input.
+    Uses Gemini to extract locations and requirements from any natural language input.
     """
-    
     system_instruction = (
         "You are a sophisticated text extractor. Your sole job is to read the user's "
         "natural language travel request and extract the current location, the destination, "
@@ -37,7 +49,7 @@ def robustly_parse_input(client: genai.Client, user_input_line: str) -> RouteInp
     config = GenerateContentConfig(
         system_instruction=system_instruction,
         response_mime_type="application/json",
-        response_schema=RouteInput, # <-- Using the INPUT schema here
+        response_schema=RouteInput,
         temperature=0.0
     )
 
@@ -46,17 +58,10 @@ def robustly_parse_input(client: genai.Client, user_input_line: str) -> RouteInp
         contents=prompt,
         config=config,
     )
-    
-    # The SDK parses the JSON response directly into a Pydantic object
     return response.parsed
 
 
 def generate_route_analysis(client: genai.Client, route_input: RouteInput):
-    """
-    Generates the final classified route analysis using the cleaned-up input.
-    """
-    
-    # Unpack the cleaned-up input
     current_loc = route_input.current_location
     destination = route_input.destination
     requirements = route_input.requirements
@@ -162,55 +167,37 @@ def generate_route_analysis(client: genai.Client, route_input: RouteInput):
     
     Please provide the structured analysis.
     """
-    
     config = GenerateContentConfig(
         system_instruction=system_instruction,
         response_mime_type="application/json",
-        response_schema=RouteAnalysis, # <-- Using the FINAL OUTPUT schema here
+        response_schema=RouteAnalysis,
         temperature=0.0
     )
 
-    try:
-        response = client.models.generate_content(
-            model='gemini-2.5-flash', 
-            contents=prompt,
-            config=config,
-        )
-        return response.parsed
-    except Exception as e:
-        return f"Gemini API Error during analysis: {e}"
+    response = client.models.generate_content(
+        model='gemini-2.5-flash',
+        contents=prompt,
+        config=config,
+    )
+    return response.parsed
 
-# --- Main Execution (The Only Part You Need to Change) ---
-if __name__ == "__main__":
-    
+# --- API Routes ---
+@app.post("/analyze", response_model=RouteAnalysis)
+async def analyze_route(request: UserRequest):
+    """
+    Analyze a user's route request from a single-line text input.
+    """
     try:
-        # 🚨 THE NEW LINE: PROMPT THE USER FOR INPUT
-        user_input_line = input("Enter your route request (e.g., 'From NYC to LA, I want hotels and greenery'):\n> ")
-        
         client = get_gemini_client()
+        parsed_input = robustly_parse_input(client, request.text)
+        analysis = generate_route_analysis(client, parsed_input)
+        return analysis
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error: {e}")
 
-        print(f"\n--- 1. Parsing User Input ---")
-        
-        # Step 1: Robustly parse the input
-        route_input = robustly_parse_input(client, user_input_line)
-        
-        print("\n✅ Extracted Input:")
-        print(f"   Origin: {route_input.current_location}")
-        print(f"   Dest.:  {route_input.destination}")
-        print(f"   Reqs:   {', '.join(route_input.requirements)}\n")
 
-        print("--- 2. Generating Route Analysis ---")
-        
-        # Step 2: Generate the final analysis
-        analysis_result = generate_route_analysis(client, route_input)
+@app.get("/")
+def home():
+    return {"message": "Route Analyzer API is running 🚀"}
 
-        # 3. Process and Display Output
-        if isinstance(analysis_result, RouteAnalysis):
-            print("\n✅ Final Structured Route Analysis (JSON):")
-            print(analysis_result.model_dump_json(indent=2))
-            
-        else:
-            print(f"\n❌ Analysis Error: {analysis_result}")
-            
-    except (ConnectionError, Exception) as e:
-        print(f"\n❌ Fatal Error: {e}")
+
