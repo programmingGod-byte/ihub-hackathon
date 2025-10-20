@@ -1,0 +1,559 @@
+diff --git a/node_modules/react-native-reanimated/android/build/generated/source/buildConfig/debug/com/swmansion/reanimated/BuildConfig.java b/node_modules/react-native-reanimated/android/build/generated/source/buildConfig/debug/com/swmansion/reanimated/BuildConfig.java
+new file mode 100644
+index 0000000..2a4fb18
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/generated/source/buildConfig/debug/com/swmansion/reanimated/BuildConfig.java
+@@ -0,0 +1,18 @@
++/**
++ * Automatically generated file. DO NOT MODIFY
++ */
++package com.swmansion.reanimated;
++
++public final class BuildConfig {
++  public static final boolean DEBUG = Boolean.parseBoolean("true");
++  public static final String LIBRARY_PACKAGE_NAME = "com.swmansion.reanimated";
++  public static final String BUILD_TYPE = "debug";
++  // Field from default config.
++  public static final int EXOPACKAGE_FLAGS = 0;
++  // Field from default config.
++  public static final boolean IS_INTERNAL_BUILD = false;
++  // Field from default config.
++  public static final boolean IS_NEW_ARCHITECTURE_ENABLED = false;
++  // Field from default config.
++  public static final int REACT_NATIVE_MINOR_VERSION = 72;
++}
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml b/node_modules/react-native-reanimated/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml
+new file mode 100644
+index 0000000..4540973
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.swmansion.reanimated" >
++
++    <uses-sdk android:minSdkVersion="21" />
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output-metadata.json b/node_modules/react-native-reanimated/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output-metadata.json
+new file mode 100644
+index 0000000..0c0f867
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/output-metadata.json
+@@ -0,0 +1,18 @@
++{
++  "version": 3,
++  "artifactType": {
++    "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
++    "kind": "Directory"
++  },
++  "applicationId": "com.swmansion.reanimated",
++  "variantName": "debug",
++  "elements": [
++    {
++      "type": "SINGLE",
++      "filters": [],
++      "attributes": [],
++      "outputFile": "AndroidManifest.xml"
++    }
++  ],
++  "elementType": "File"
++}
+\ No newline at end of file
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/aar_metadata/debug/aar-metadata.properties b/node_modules/react-native-reanimated/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
+new file mode 100644
+index 0000000..776557e
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
+@@ -0,0 +1,5 @@
++aarFormatVersion=1.0
++aarMetadataVersion=1.0
++minCompileSdk=1
++minCompileSdkExtension=0
++minAndroidGradlePluginVersion=1.0.0
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/annotation_processor_list/debug/annotationProcessors.json b/node_modules/react-native-reanimated/android/build/intermediates/annotation_processor_list/debug/annotationProcessors.json
+new file mode 100644
+index 0000000..9e26dfe
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/annotation_processor_list/debug/annotationProcessors.json
+@@ -0,0 +1 @@
++{}
+\ No newline at end of file
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/compile_r_class_jar/debug/R.jar b/node_modules/react-native-reanimated/android/build/intermediates/compile_r_class_jar/debug/R.jar
+new file mode 100644
+index 0000000..7a4f2e0
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/compile_r_class_jar/debug/R.jar differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/compile_symbol_list/debug/R.txt b/node_modules/react-native-reanimated/android/build/intermediates/compile_symbol_list/debug/R.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/cxx/abi_configuration_6is53f2k.json b/node_modules/react-native-reanimated/android/build/intermediates/cxx/abi_configuration_6is53f2k.json
+new file mode 100644
+index 0000000..e542dae
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/cxx/abi_configuration_6is53f2k.json
+@@ -0,0 +1,14 @@
++{
++  "allAbis": [
++    "armeabi-v7a",
++    "arm64-v8a",
++    "x86",
++    "x86_64"
++  ],
++  "validAbis": [
++    "ARMEABI_V7A",
++    "ARM64_V8A",
++    "X86",
++    "X86_64"
++  ]
++}
+\ No newline at end of file
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/cxx/abi_configuration_6is53f2k.log b/node_modules/react-native-reanimated/android/build/intermediates/cxx/abi_configuration_6is53f2k.log
+new file mode 100644
+index 0000000..0637a08
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/cxx/abi_configuration_6is53f2k.log
+@@ -0,0 +1 @@
++[]
+\ No newline at end of file
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/cxx/abi_configuration_6is53f2k_key.json b/node_modules/react-native-reanimated/android/build/intermediates/cxx/abi_configuration_6is53f2k_key.json
+new file mode 100644
+index 0000000..a444d81
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/cxx/abi_configuration_6is53f2k_key.json
+@@ -0,0 +1,23 @@
++{
++  "ndkHandlerSupportedAbis": [
++    "ARMEABI_V7A",
++    "ARM64_V8A",
++    "X86",
++    "X86_64"
++  ],
++  "ndkHandlerDefaultAbis": [
++    "ARMEABI_V7A",
++    "ARM64_V8A",
++    "X86",
++    "X86_64"
++  ],
++  "externalNativeBuildAbiFilters": [
++    "x86_64",
++    "x86",
++    "armeabi-v7a",
++    "arm64-v8a"
++  ],
++  "ndkConfigAbiFilters": [],
++  "splitsFilterAbis": [],
++  "ideBuildOnlyTargetAbi": true
++}
+\ No newline at end of file
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/cxx/create_cxx_tasks_31_timing.txt b/node_modules/react-native-reanimated/android/build/intermediates/cxx/create_cxx_tasks_31_timing.txt
+new file mode 100644
+index 0000000..ceafeb7
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/cxx/create_cxx_tasks_31_timing.txt
+@@ -0,0 +1,10 @@
++# C/C++ build system timings
++create_cxx_tasks
++  create-initial-cxx-model 28ms
++create_cxx_tasks completed in 30ms
++
++# C/C++ build system timings
++create_cxx_tasks
++  create-initial-cxx-model 33ms
++create_cxx_tasks completed in 34ms
++
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/cxx/ndk_locator_record_52558p42.json b/node_modules/react-native-reanimated/android/build/intermediates/cxx/ndk_locator_record_52558p42.json
+new file mode 100644
+index 0000000..10ef7d1
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/cxx/ndk_locator_record_52558p42.json
+@@ -0,0 +1,11 @@
++{
++  "ndk": "/home/shivam/Android/Sdk/ndk/25.1.8937393",
++  "revision": {
++    "mMajor": 25,
++    "mMinor": 1,
++    "mMicro": 8937393,
++    "mPreview": 0,
++    "mPrecision": "MICRO",
++    "mPreviewSeparator": " "
++  }
++}
+\ No newline at end of file
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/cxx/ndk_locator_record_52558p42.log b/node_modules/react-native-reanimated/android/build/intermediates/cxx/ndk_locator_record_52558p42.log
+new file mode 100644
+index 0000000..342b6a0
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/cxx/ndk_locator_record_52558p42.log
+@@ -0,0 +1,80 @@
++[
++  {
++    "level_": 0,
++    "message_": "android.ndkVersion from module build.gradle is [not set]",
++    "file_": "",
++    "tag_": "",
++    "diagnosticCode_": 0,
++    "memoizedIsInitialized": 1,
++    "unknownFields": {
++      "fields": {}
++    },
++    "memoizedSize": -1,
++    "memoizedHashCode": 0
++  },
++  {
++    "level_": 0,
++    "message_": "android.ndkPath from module build.gradle is not set",
++    "file_": "",
++    "tag_": "",
++    "diagnosticCode_": 0,
++    "memoizedIsInitialized": 1,
++    "unknownFields": {
++      "fields": {}
++    },
++    "memoizedSize": -1,
++    "memoizedHashCode": 0
++  },
++  {
++    "level_": 0,
++    "message_": "ndk.dir in local.properties is not set",
++    "file_": "",
++    "tag_": "",
++    "diagnosticCode_": 0,
++    "memoizedIsInitialized": 1,
++    "unknownFields": {
++      "fields": {}
++    },
++    "memoizedSize": -1,
++    "memoizedHashCode": 0
++  },
++  {
++    "level_": 0,
++    "message_": "Not considering ANDROID_NDK_HOME because support was removed after deprecation period.",
++    "file_": "",
++    "tag_": "",
++    "diagnosticCode_": 0,
++    "memoizedIsInitialized": 1,
++    "unknownFields": {
++      "fields": {}
++    },
++    "memoizedSize": -1,
++    "memoizedHashCode": 0
++  },
++  {
++    "level_": 0,
++    "message_": "sdkFolder is /home/shivam/Android/Sdk",
++    "file_": "",
++    "tag_": "",
++    "diagnosticCode_": 0,
++    "memoizedIsInitialized": 1,
++    "unknownFields": {
++      "fields": {}
++    },
++    "memoizedSize": -1,
++    "memoizedHashCode": 0
++  },
++  {
++    "level_": 0,
++    "message_": "Because no explicit NDK was requested, the default version [25.1.8937393] for this Android Gradle Plugin will be used",
++    "file_": "",
++    "tag_": "",
++    "diagnosticCode_": 0,
++    "memoizedIsInitialized": 1,
++    "unknownFields": {
++      "fields": {}
++    },
++    "memoizedSize": -1,
++    "memoizedHashCode": 0
++  }
++]
+\ No newline at end of file
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/cxx/ndk_locator_record_52558p42_key.json b/node_modules/react-native-reanimated/android/build/intermediates/cxx/ndk_locator_record_52558p42_key.json
+new file mode 100644
+index 0000000..1152ad3
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/cxx/ndk_locator_record_52558p42_key.json
+@@ -0,0 +1,12 @@
++{
++  "sdkFolder": "/home/shivam/Android/Sdk",
++  "sideBySideNdkFolderNames": [
++    "27.1.12297006",
++    "29.0.13846066",
++    "29.0.14206865",
++    "23.1.7779620",
++    "25.1.8937393",
++    "29.0.13113456",
++    "25.2.9519653"
++  ]
++}
+\ No newline at end of file
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties b/node_modules/react-native-reanimated/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+new file mode 100644
+index 0000000..3c2bc80
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+@@ -0,0 +1 @@
++#Sat Oct 18 23:27:48 IST 2025
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml b/node_modules/react-native-reanimated/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+new file mode 100644
+index 0000000..684a903
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/main/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/build/generated/res/resValues/debug"/></dataSet><mergedItems/></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/facebook/react/uimanager/UIManagerReanimatedHelper.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/facebook/react/uimanager/UIManagerReanimatedHelper.class
+new file mode 100644
+index 0000000..85e267b
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/facebook/react/uimanager/UIManagerReanimatedHelper.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/common/GestureHandlerStateManager.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/common/GestureHandlerStateManager.class
+new file mode 100644
+index 0000000..0b74636
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/common/GestureHandlerStateManager.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/CopiedEvent$1.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/CopiedEvent$1.class
+new file mode 100644
+index 0000000..74a6c65
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/CopiedEvent$1.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/CopiedEvent.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/CopiedEvent.class
+new file mode 100644
+index 0000000..918b15a
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/CopiedEvent.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/MapUtils.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/MapUtils.class
+new file mode 100644
+index 0000000..881223f
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/MapUtils.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NativeProxy$1.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NativeProxy$1.class
+new file mode 100644
+index 0000000..4354edf
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NativeProxy$1.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NativeProxy.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NativeProxy.class
+new file mode 100644
+index 0000000..67b0398
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NativeProxy.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$1.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$1.class
+new file mode 100644
+index 0000000..ef5cd79
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$1.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$2.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$2.class
+new file mode 100644
+index 0000000..c6bb0ea
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$2.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$3.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$3.class
+new file mode 100644
+index 0000000..2e3da42
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$3.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$NativeUpdateOperation.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$NativeUpdateOperation.class
+new file mode 100644
+index 0000000..9b0423d
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$NativeUpdateOperation.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$OnAnimationFrame.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$OnAnimationFrame.class
+new file mode 100644
+index 0000000..2ea1ed4
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager$OnAnimationFrame.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager.class
+new file mode 100644
+index 0000000..1ca7dce
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/NodesManager.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReaCompatibility.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReaCompatibility.class
+new file mode 100644
+index 0000000..ebe5ea1
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReaCompatibility.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedMessageQueueThreadBase.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedMessageQueueThreadBase.class
+new file mode 100644
+index 0000000..d5f9158
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedMessageQueueThreadBase.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedModule$1.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedModule$1.class
+new file mode 100644
+index 0000000..cc29080
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedModule$1.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedModule$UIThreadOperation.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedModule$UIThreadOperation.class
+new file mode 100644
+index 0000000..9224af6
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedModule$UIThreadOperation.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedModule.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedModule.class
+new file mode 100644
+index 0000000..2097bc7
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedModule.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedPackage$1.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedPackage$1.class
+new file mode 100644
+index 0000000..a06c58a
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedPackage$1.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedPackage.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedPackage.class
+new file mode 100644
+index 0000000..1a41b74
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/ReanimatedPackage.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/Scheduler$1.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/Scheduler$1.class
+new file mode 100644
+index 0000000..d031a18
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/Scheduler$1.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/Scheduler$2.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/Scheduler$2.class
+new file mode 100644
+index 0000000..fe58223
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/Scheduler$2.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/Scheduler.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/Scheduler.class
+new file mode 100644
+index 0000000..3160882
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/Scheduler.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/Utils.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/Utils.class
+new file mode 100644
+index 0000000..b48201d
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/Utils.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/AnimationsManager.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/AnimationsManager.class
+new file mode 100644
+index 0000000..acd1af5
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/AnimationsManager.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/LayoutAnimations$Types.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/LayoutAnimations$Types.class
+new file mode 100644
+index 0000000..719da1d
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/LayoutAnimations$Types.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/LayoutAnimations.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/LayoutAnimations.class
+new file mode 100644
+index 0000000..6944f44
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/LayoutAnimations.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/NativeMethodsHolder.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/NativeMethodsHolder.class
+new file mode 100644
+index 0000000..84b83b7
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/NativeMethodsHolder.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/ReaLayoutAnimator.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/ReaLayoutAnimator.class
+new file mode 100644
+index 0000000..7824947
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/ReaLayoutAnimator.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/ReanimatedNativeHierarchyManager.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/ReanimatedNativeHierarchyManager.class
+new file mode 100644
+index 0000000..6e6f4fe
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/ReanimatedNativeHierarchyManager.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedElement.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedElement.class
+new file mode 100644
+index 0000000..b3524cb
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedElement.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedTransitionManager$ConfigCleanerTreeVisitor.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedTransitionManager$ConfigCleanerTreeVisitor.class
+new file mode 100644
+index 0000000..3c6676f
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedTransitionManager$ConfigCleanerTreeVisitor.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedTransitionManager$SnapshotTreeVisitor.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedTransitionManager$SnapshotTreeVisitor.class
+new file mode 100644
+index 0000000..920a6cf
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedTransitionManager$SnapshotTreeVisitor.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedTransitionManager$TreeVisitor.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedTransitionManager$TreeVisitor.class
+new file mode 100644
+index 0000000..f6f9219
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedTransitionManager$TreeVisitor.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedTransitionManager.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedTransitionManager.class
+new file mode 100644
+index 0000000..b96575f
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/SharedTransitionManager.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/Snapshot.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/Snapshot.class
+new file mode 100644
+index 0000000..8ccd973
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/Snapshot.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/ViewHierarchyObserver.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/ViewHierarchyObserver.class
+new file mode 100644
+index 0000000..f08a1d8
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/layoutReanimation/ViewHierarchyObserver.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/nativeProxy/NativeProxyCommon.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/nativeProxy/NativeProxyCommon.class
+new file mode 100644
+index 0000000..7b68b8a
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/nativeProxy/NativeProxyCommon.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/nativeProxy/SensorSetter.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/nativeProxy/SensorSetter.class
+new file mode 100644
+index 0000000..d2a8328
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/nativeProxy/SensorSetter.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/sensor/ReanimatedSensor.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/sensor/ReanimatedSensor.class
+new file mode 100644
+index 0000000..6bf838a
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/sensor/ReanimatedSensor.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/sensor/ReanimatedSensorContainer.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/sensor/ReanimatedSensorContainer.class
+new file mode 100644
+index 0000000..2425063
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/sensor/ReanimatedSensorContainer.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/sensor/ReanimatedSensorListener.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/sensor/ReanimatedSensorListener.class
+new file mode 100644
+index 0000000..3bbd197
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/sensor/ReanimatedSensorListener.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/sensor/ReanimatedSensorType.class b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/sensor/ReanimatedSensorType.class
+new file mode 100644
+index 0000000..72d4383
+Binary files /dev/null and b/node_modules/react-native-reanimated/android/build/intermediates/javac/debug/classes/com/swmansion/reanimated/sensor/ReanimatedSensorType.class differ
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/local_only_symbol_list/debug/R-def.txt b/node_modules/react-native-reanimated/android/build/intermediates/local_only_symbol_list/debug/R-def.txt
+new file mode 100644
+index 0000000..78ac5b8
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/local_only_symbol_list/debug/R-def.txt
+@@ -0,0 +1,2 @@
++R_DEF: Internal format may change without notice
++local
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt b/node_modules/react-native-reanimated/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+new file mode 100644
+index 0000000..33c6709
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+@@ -0,0 +1,7 @@
++1<?xml version="1.0" encoding="utf-8"?>
++2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++3    package="com.swmansion.reanimated" >
++4
++5    <uses-sdk android:minSdkVersion="21" />
++6
++7</manifest>
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml b/node_modules/react-native-reanimated/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml
+new file mode 100644
+index 0000000..4540973
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="utf-8"?>
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    package="com.swmansion.reanimated" >
++
++    <uses-sdk android:minSdkVersion="21" />
++
++</manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/navigation_json/debug/navigation.json b/node_modules/react-native-reanimated/android/build/intermediates/navigation_json/debug/navigation.json
+new file mode 100644
+index 0000000..0637a08
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/navigation_json/debug/navigation.json
+@@ -0,0 +1 @@
++[]
+\ No newline at end of file
+diff --git a/node_modules/react-native-reanimated/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt b/node_modules/react-native-reanimated/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
+new file mode 100644
+index 0000000..212ed29
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
+@@ -0,0 +1 @@
++com.swmansion.reanimated
+diff --git a/node_modules/react-native-reanimated/android/build/outputs/logs/manifest-merger-debug-report.txt b/node_modules/react-native-reanimated/android/build/outputs/logs/manifest-merger-debug-report.txt
+new file mode 100644
+index 0000000..bfbd327
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/build/outputs/logs/manifest-merger-debug-report.txt
+@@ -0,0 +1,17 @@
++-- Merging decision tree log ---
++manifest
++ADDED from /home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/main/AndroidManifest.xml:2:1-5:12
++INJECTED from /home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/main/AndroidManifest.xml:2:1-5:12
++	package
++		ADDED from /home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/main/AndroidManifest.xml:3:11-45
++		INJECTED from /home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/main/AndroidManifest.xml
++	xmlns:android
++		ADDED from /home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/main/AndroidManifest.xml:2:11-69
++uses-sdk
++INJECTED from /home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
++INJECTED from /home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/main/AndroidManifest.xml
++INJECTED from /home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/main/AndroidManifest.xml
++	android:targetSdkVersion
++		INJECTED from /home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/main/AndroidManifest.xml
++	android:minSdkVersion
++		INJECTED from /home/shivam/Desktop/ihub-hackathon/finalAgain/node_modules/react-native-reanimated/android/src/main/AndroidManifest.xml
+diff --git a/node_modules/react-native-reanimated/android/src/main/res/values/ids.xml b/node_modules/react-native-reanimated/android/src/main/res/values/ids.xml
+new file mode 100644
+index 0000000..5ddd527
+--- /dev/null
++++ b/node_modules/react-native-reanimated/android/src/main/res/values/ids.xml
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <item name="action_bar_root" type="id"/>
++</resources>
