@@ -21,5 +21,10 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+       <meta-data
+    android:name="android.webkit.WebView.EnableSafeBrowsing"
+    android:value="false" />
+    
+    
     </application>
 </manifest>

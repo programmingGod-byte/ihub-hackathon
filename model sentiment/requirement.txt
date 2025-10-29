@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+torch
+transformers
+tweepy
+asyncpraw
+newsapi-python
+httpx
+geopy
+nltk
+textblob
+python-dotenv
+pandas
+numpy

@@ -42,5 +42,14 @@ subprojects { subproject ->
                 buildToolsVersion "33.0.0"
             }
         }
+        
+        // Fix for react-native-reanimated task dependency
+        if (project.name == 'react-native-reanimated') {
+            tasks.configureEach { task ->
+                if (task.name.contains('mergeDebugJniLibFolders') || task.name.contains('mergeReleaseJniLibFolders')) {
+                    task.mustRunAfter(tasks.findByName('packageNdkLibs'))
+                }
+            }
+        }
     }
 }
